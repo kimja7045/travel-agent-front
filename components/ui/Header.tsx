@@ -6,11 +6,10 @@ import styled from "styled-components";
 
 export const Header = () => {
   const { top } = useSafeAreaInsets();
-  console.log("top", top);
 
   return (
     <ThemedView style={styles.container}>
-      <HeaderTitle>T</HeaderTitle>
+      <HeaderTitle>Trip</HeaderTitle>
       {/* <Image
         source={require("@/assets/images/AppLogo.png")}
         style={styles.logo}
@@ -33,5 +32,5 @@ export const HeaderTitle = styled(ThemedText)`
   font-size: 48px;
   line-height: 60px;
   font-weight: bold;
-  color: #8cacd3;
+  color: #87ceeb;
 `;
