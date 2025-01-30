@@ -9,7 +9,7 @@ export const Header = () => {
 
   return (
     <ThemedView style={styles.container}>
-      <HeaderTitle>Trip</HeaderTitle>
+      <ThemedText type="title">TripGuide</ThemedText>
       {/* <Image
         source={require("@/assets/images/AppLogo.png")}
         style={styles.logo}
