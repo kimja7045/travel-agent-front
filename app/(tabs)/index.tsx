@@ -20,7 +20,7 @@ export default function HomeScreen() {
         />
       }>
       <ThemedView style={styles.contentContainer}>
-        <ThemedText type="title" lightColor="#87ceeb" darkColor="#87ceeb">
+        <ThemedText type="title" lightColor="#87ceeb" darkColor="#2a2b2b">
           Trip
         </ThemedText>
         <ThemedText>Hello</ThemedText>
