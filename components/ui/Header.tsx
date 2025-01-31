@@ -1,8 +1,9 @@
-import { Image, StyleSheet } from "react-native";
+import { StyleSheet } from "react-native";
 import { ThemedView } from "../ThemedView";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { ThemedText } from "../ThemedText";
 import styled from "styled-components";
+import { BRAND_COLOR } from "../../constants/Colors";
 
 export const Header = () => {
   const { top } = useSafeAreaInsets();
@@ -10,10 +11,6 @@ export const Header = () => {
   return (
     <ThemedView style={styles.container}>
       <ThemedText type="title">TripGuide</ThemedText>
-      {/* <Image
-        source={require("@/assets/images/AppLogo.png")}
-        style={styles.logo}
-      /> */}
     </ThemedView>
   );
 };
@@ -32,5 +29,5 @@ export const HeaderTitle = styled(ThemedText)`
   font-size: 48px;
   line-height: 60px;
   font-weight: bold;
-  color: #87ceeb;
+  color: ${BRAND_COLOR};
 `;
