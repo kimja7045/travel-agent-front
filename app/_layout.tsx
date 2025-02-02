@@ -22,6 +22,7 @@ const queryClient = new QueryClient({});
 export default function RootLayout() {
   useReactQueryDevTools(queryClient);
   const colorScheme = useColorScheme();
+  const isDarkTheme = colorScheme === "dark";
   const [loaded] = useFonts({
     SpaceMono: require("../assets/fonts/SpaceMono-Regular.ttf"),
   });
@@ -38,12 +39,12 @@ export default function RootLayout() {
 
   return (
     <QueryClientProvider client={queryClient}>
-      <ThemeProvider value={colorScheme === "dark" ? DarkTheme : DefaultTheme}>
+      <ThemeProvider value={isDarkTheme ? DarkTheme : DefaultTheme}>
+        <StatusBar style={isDarkTheme ? "light" : "dark"} />
         <Stack>
           <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
           <Stack.Screen name="+not-found" />
         </Stack>
-        <StatusBar style="auto" />
       </ThemeProvider>
     </QueryClientProvider>
   );

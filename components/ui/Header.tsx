@@ -10,18 +10,20 @@ export const Header = () => {
 
   return (
     <ThemedView style={styles.container}>
-      <ThemedText type="title">TripGuide</ThemedText>
+      <ThemedText style={styles.title}>TripGuide</ThemedText>
     </ThemedView>
   );
 };
 
 const styles = StyleSheet.create({
   container: {
-    padding: 16,
+    paddingHorizontal: 16,
+    paddingVertical: 8,
   },
-  logo: {
-    height: 100,
-    width: 100,
+  title: {
+    fontSize: 28,
+    lineHeight: 42,
+    color: BRAND_COLOR,
   },
 });
 

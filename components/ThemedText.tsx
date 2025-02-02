@@ -11,7 +11,7 @@ export type ThemedTextProps = TextProps & {
 
 export function ThemedText({
   style,
-  lightColor = BRAND_COLOR,
+  lightColor = "black",
   darkColor = "white",
   type = "default",
   ...rest
@@ -42,20 +42,21 @@ const styles = StyleSheet.create({
   defaultSemiBold: {
     fontSize: 16,
     lineHeight: 24,
-    fontWeight: "600",
+    fontWeight: "500",
   },
   title: {
     fontSize: 32,
+    lineHeight: 48,
     fontWeight: "bold",
-    lineHeight: 32,
   },
   subtitle: {
-    fontSize: 20,
+    fontSize: 24,
+    lineHeight: 36,
     fontWeight: "bold",
   },
   link: {
-    lineHeight: 30,
     fontSize: 16,
-    color: "#0a7ea4",
+    lineHeight: 24,
+    color: BRAND_COLOR,
   },
 });
