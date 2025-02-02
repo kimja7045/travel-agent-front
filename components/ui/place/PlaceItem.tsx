@@ -12,14 +12,15 @@ export type Place = {
 
 export const PlaceItem = ({ title, subtitle, image }: Place) => {
   const { width: screenWidth } = useWindowDimensions();
+  const PLACE_WIDTH = screenWidth / 2 - 20;
 
   return (
-    <PlaceButton style={styles.container}>
+    <PlaceButton style={styles.container} width={PLACE_WIDTH}>
       <ThemedView style={styles.contentContainer}>
         <PlaceImage
           source={{ uri: image }}
           resizeMode="cover"
-          width={screenWidth / 2 - 20}
+          width={PLACE_WIDTH}
         />
         <ThemedText type="defaultSemiBold" style={styles.title}>
           {title}
@@ -36,6 +37,7 @@ const styles = StyleSheet.create({
   },
   contentContainer: {
     padding: 8,
+    flex: 1,
   },
   title: {
     marginTop: 8,
@@ -47,7 +49,9 @@ const styles = StyleSheet.create({
   },
 });
 
-const PlaceButton = styled.Pressable``;
+const PlaceButton = styled.Pressable<{ width: number }>`
+  width: ${({ width }) => width}px;
+`;
 
 const PlaceImage = styled.Image`
   border-radius: 8px;
