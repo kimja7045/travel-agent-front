@@ -1,11 +1,14 @@
 # Simple Travel Guide app
 
 TODO
-- 장소
-  - 목록, 이름 복사 & 일정 추가
-  - map apply
-- 일정
-  - 목록, 추천 일정
+- [ ] 장소
+  - [x] 목록
+  - [x] 이름 복사
+  - [ ] 일정 추가
+  - [ ] map apply
+- [ ] 일정
+  - [ ] 목록
+  - [ ] 추천 일정(3박4일, 4박5일)
 - [ ] eas update
 - [ ] ga with statsig
 - [ ] push notification
