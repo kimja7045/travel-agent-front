@@ -1,11 +1,11 @@
 {
   "expo": {
-    "name": "travel-expert",
-    "slug": "travel-expert",
+    "name": "travel-agent",
+    "slug": "travel-agent",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
-    "scheme": "travel-expert",
+    "scheme": "travel-agent",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
@@ -38,6 +38,15 @@
     ],
     "experiments": {
       "typedRoutes": true
-    }
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "d307d2f5-5ec5-435f-8819-017c2778f9cf"
+      }
+    },
+    "owner": "lukeekim"
   }
 }
