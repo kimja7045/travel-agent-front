@@ -21,6 +21,7 @@ const queryClient = new QueryClient({});
 
 export default function RootLayout() {
   useReactQueryDevTools(queryClient);
+
   const colorScheme = useColorScheme();
   const isDarkTheme = colorScheme === "dark";
   const [loaded] = useFonts({
