@@ -43,6 +43,15 @@ const MOCK_PLACES: Place[] = [
 ];
 
 export default function HomeScreen() {
+  // useEffect(() => {
+  //   (async () => {
+  //     const { status } = await requestTrackingPermissionsAsync();
+  //     if (status === "granted") {
+  //       console.log("Yay! I have user permission to track data");
+  //     }
+  //   })();
+  // }, []);
+
   const handlePlacePress = useCallback((place: Place) => {
     setClipboardText(place.countryPlaceName);
     const url = `https://ditu.amap.com/search?query=${place.countryPlaceName}`;
