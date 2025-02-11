@@ -27,7 +27,7 @@ export const PlaceItem = ({ place, onPress }: PlaceItemProps) => {
       <ThemedView style={styles.contentContainer}>
         <PlaceImage
           source={{ uri: image }}
-          resizeMode="cover"
+          contentFit="cover"
           width={PLACE_WIDTH}
           cachePolicy="memory-disk"
         />
