@@ -53,7 +53,8 @@
     "react-native-webview": "13.12.5",
     "styled-components": "^6.1.13",
     "@shopify/flash-list": "1.7.1",
-    "expo-image": "~2.0.4"
+    "expo-image": "~2.0.4",
+    "expo-tracking-transparency": "~5.1.1"
   },
   "devDependencies": {
     "@babel/core": "^7.25.2",
