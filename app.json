@@ -43,6 +43,12 @@
         {
           "userTrackingPermission": "Allow this app to collect app-related data that can be used for tracking you or your device."
         }
+      ],
+      [
+        "expo-dev-client",
+        {
+          "launchMode": "most-recent"
+        }
       ]
     ],
     "experiments": {
