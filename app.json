@@ -13,6 +13,14 @@
       "bundleIdentifier": "com.travel.agent",
       "infoPlist": {
         "NSUserTrackingUsageDescription": "귀하에게 개인화된 광고를 제공하는 데 사용됩니다."
+      },
+      "privacyManifests": {
+        "NSPrivacyAccessedAPITypes": [
+          {
+            "NSPrivacyAccessedAPIType": "NSPrivacyAccessedAPICategoryUserDefaults",
+            "NSPrivacyAccessedAPITypeReasons": ["CA92.1"]
+          }
+        ]
       }
     },
     "android": {
