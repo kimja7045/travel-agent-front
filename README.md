@@ -5,6 +5,7 @@ Tech stack
 - FSD Architecture
 - React Query
 - Zustand
+- react native paper
 
 
 TODO
