@@ -8,7 +8,7 @@ import { RECOMMEND_SCHEDULE_LIST } from "../constants/place";
 import { BRAND_COLOR } from "../constants/Colors";
 
 export const HomeScreen = () => {
-  const [isGridLayout, setIsGridLayout] = useState(false);
+  const [isGridLayout, setIsGridLayout] = useState(true);
 
   return (
     <SafeAreaView style={styles.container}>
