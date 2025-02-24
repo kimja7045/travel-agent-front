@@ -1,12 +1,12 @@
 import { StyleSheet } from "react-native";
 import { ThemedView } from "../ThemedView";
-import { useSafeAreaInsets } from "react-native-safe-area-context";
+// import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { ThemedText } from "../ThemedText";
 import styled from "styled-components";
 import { BRAND_COLOR } from "../../constants/Colors";
 
 export const Header = () => {
-  const { top } = useSafeAreaInsets();
+  // const { top } = useSafeAreaInsets();
 
   return (
     <ThemedView style={styles.container}>

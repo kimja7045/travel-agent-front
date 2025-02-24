@@ -1,4 +1,4 @@
-import placesData from "../place.json";
+import placesData from "../../place.json";
 export const PLACE_LIST = placesData.places;
 
 export const RECOMMEND_SCHEDULE_LIST = [
