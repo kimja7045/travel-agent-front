@@ -3,7 +3,7 @@ import { SafeAreaView } from "react-native-safe-area-context";
 import { Ionicons, MaterialCommunityIcons } from "@expo/vector-icons";
 import { useState } from "react";
 
-import { PlaceList } from "@shared/components/PlaceList";
+import { PlaceList } from "@shared/ui/PlaceList";
 import { RECOMMEND_SCHEDULE_LIST } from "@shared/constants/place";
 import { BRAND_COLOR } from "@shared/constants/Colors";
 
