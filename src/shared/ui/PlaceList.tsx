@@ -8,7 +8,6 @@ import {
 } from "react-native";
 import { Image } from "expo-image";
 
-import { Ionicons } from "@expo/vector-icons";
 import { useCallback } from "react";
 import { PLACE_LIST } from "@shared/constants/place";
 
@@ -24,8 +23,7 @@ export const PlaceList = ({ isGridLayout }: { isGridLayout: boolean }) => {
         <View style={styles.placeInfo}>
           <Text style={styles.placeName}>{item.name}</Text>
           <View style={styles.ratingContainer}>
-            <Ionicons name="star" size={16} color="#FFD700" />
-            <Text style={styles.rating}>{item.rating}</Text>
+            <Text style={styles.rating}>{item.description}</Text>
           </View>
         </View>
       </Pressable>

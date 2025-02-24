@@ -1,5 +1,5 @@
 import placesData from "../../../place.json";
-import { Place } from "@entities/place";
+import { Place } from "@shared/model/place";
 
 export const PLACE_LIST: Place[] = placesData.places;
 
