@@ -12,7 +12,7 @@ import "react-native-reanimated";
 
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { useReactQueryDevTools } from "@dev-plugins/react-query";
-import { useColorScheme } from "@shared/hooks/useColorScheme";
+import { useDarkMode } from "@shared/hooks/useDarkMode";
 
 // Prevent the splash screen from auto-hiding before asset loading is complete.
 SplashScreen.preventAutoHideAsync();
@@ -22,8 +22,7 @@ const queryClient = new QueryClient({});
 export default function RootLayout() {
   useReactQueryDevTools(queryClient);
 
-  const colorScheme = useColorScheme();
-  const isDarkTheme = colorScheme === "dark";
+  const isDarkTheme = useDarkMode();
   const [loaded] = useFonts({
     SpaceMono: require("../assets/fonts/SpaceMono-Regular.ttf"),
   });

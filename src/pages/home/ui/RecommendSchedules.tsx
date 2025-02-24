@@ -1,11 +1,17 @@
 import { RECOMMEND_SCHEDULE_LIST } from "@shared/constants/place";
 import { Pressable, ScrollView, Text, StyleSheet } from "react-native";
 import { BRAND_COLOR } from "../../../shared/constants/Colors";
+import { useDarkMode } from "@shared/hooks/useDarkMode";
 
 export const RecommendSchedules = () => {
+  const isDarkMode = useDarkMode();
+
   return (
     <>
-      <Text style={styles.sectionTitle}>일정 추천</Text>
+      <Text
+        style={[styles.sectionTitle, { color: isDarkMode ? "white" : "#333" }]}>
+        일정 추천
+      </Text>
       <ScrollView
         horizontal
         showsHorizontalScrollIndicator={false}
@@ -27,7 +33,6 @@ const styles = StyleSheet.create({
   sectionTitle: {
     fontSize: 22,
     fontWeight: "bold",
-    color: "#333",
     marginBottom: 16,
   },
   recommendationsContainer: {
@@ -35,14 +40,13 @@ const styles = StyleSheet.create({
   },
   recommendationCard: {
     backgroundColor: BRAND_COLOR,
-    // backgroundColor: BRAND_COLOR + "20",
     paddingHorizontal: 20,
     paddingVertical: 12,
     borderRadius: 25,
     marginRight: 12,
   },
   recommendationText: {
-    color: BRAND_COLOR,
+    color: "white",
     fontWeight: "600",
     fontSize: 14,
   },

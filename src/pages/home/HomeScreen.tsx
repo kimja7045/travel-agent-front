@@ -7,8 +7,10 @@ import { PlaceList } from "@shared/ui/PlaceList";
 import { BRAND_COLOR } from "@shared/constants/Colors";
 import { Header } from "@widgets/header/Header";
 import { RecommendSchedules } from "./ui/RecommendSchedules";
+import { useDarkMode } from "@shared/hooks/useDarkMode";
 
 export const HomeScreen = () => {
+  const isDarkMode = useDarkMode();
   const [isGridLayout, setIsGridLayout] = useState(true);
 
   return (
@@ -16,14 +18,24 @@ export const HomeScreen = () => {
       <Header
         title="Travel Agent"
         rightIcon={
-          <Ionicons name="notifications-outline" size={24} color="#333" />
+          <Ionicons
+            name="notifications-outline"
+            size={24}
+            color={isDarkMode ? "white" : "#333"}
+          />
         }
       />
       <ScrollView style={styles.content} showsVerticalScrollIndicator={false}>
         <RecommendSchedules />
 
         <View style={styles.sectionHeader}>
-          <Text style={styles.sectionTitle}>장소 목록</Text>
+          <Text
+            style={[
+              styles.sectionTitle,
+              { color: isDarkMode ? "white" : "#333" },
+            ]}>
+            장소 목록
+          </Text>
           <View style={styles.headerActions}>
             <Pressable
               onPress={() => setIsGridLayout(!isGridLayout)}
