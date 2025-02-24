@@ -1,11 +1,11 @@
 import { StyleSheet, Platform } from "react-native";
 import { Image } from "expo-image";
-import { Collapsible } from "@/src/components/Collapsible";
-import { ExternalLink } from "@/src/components/ExternalLink";
-import ParallaxScrollView from "@/src/components/ParallaxScrollView";
-import { ThemedText } from "@/src/components/ThemedText";
-import { ThemedView } from "@/src/components/ThemedView";
-import { IconSymbol } from "@/src/components/ui/IconSymbol";
+import { Collapsible } from "@shared/components/Collapsible";
+import { ExternalLink } from "@shared/components/ExternalLink";
+import ParallaxScrollView from "@shared/components/ParallaxScrollView";
+import { ThemedText } from "@shared/components/ThemedText";
+import { ThemedView } from "@shared/components/ThemedView";
+import { IconSymbol } from "@shared/components/ui/IconSymbol";
 
 export default function Schedule() {
   return (

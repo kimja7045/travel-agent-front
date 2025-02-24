@@ -3,7 +3,7 @@ import { ThemedView } from "../ThemedView";
 // import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { ThemedText } from "../ThemedText";
 import styled from "styled-components";
-import { BRAND_COLOR } from "../../constants/Colors";
+import { BRAND_COLOR } from "@shared/constants/Colors";
 
 export const Header = () => {
   // const { top } = useSafeAreaInsets();

@@ -10,7 +10,7 @@ import { Image } from "expo-image";
 
 import { Ionicons } from "@expo/vector-icons";
 import { useCallback } from "react";
-import { PLACE_LIST } from "../constants/place";
+import { PLACE_LIST } from "@shared/constants/place";
 
 export const PlaceList = ({ isGridLayout }: { isGridLayout: boolean }) => {
   const renderPlaceCard = useCallback(

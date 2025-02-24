@@ -1,5 +1,7 @@
-import placesData from "../../place.json";
-export const PLACE_LIST = placesData.places;
+import placesData from "../../../place.json";
+import { Place } from "@entities/place";
+
+export const PLACE_LIST: Place[] = placesData.places;
 
 export const RECOMMEND_SCHEDULE_LIST = [
   { id: "1", days: 4, nights: 3 },

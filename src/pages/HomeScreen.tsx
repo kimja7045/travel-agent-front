@@ -3,9 +3,9 @@ import { SafeAreaView } from "react-native-safe-area-context";
 import { Ionicons, MaterialCommunityIcons } from "@expo/vector-icons";
 import { useState } from "react";
 
-import { PlaceList } from "../components/PlaceList";
-import { RECOMMEND_SCHEDULE_LIST } from "../constants/place";
-import { BRAND_COLOR } from "../constants/Colors";
+import { PlaceList } from "@shared/components/PlaceList";
+import { RECOMMEND_SCHEDULE_LIST } from "@shared/constants/place";
+import { BRAND_COLOR } from "@shared/constants/Colors";
 
 export const HomeScreen = () => {
   const [isGridLayout, setIsGridLayout] = useState(true);
